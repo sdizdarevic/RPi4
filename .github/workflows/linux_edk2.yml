@@ -3,13 +3,16 @@
 # https://github.com/pftf/RPi4 fork
 name: UEFI firmware
 
-on:  
+on:
+
   
 
   push:
   workflow_dispatch:
     tags:
       - '*'
+permissions:
+  contents: write
 
 env:
   PROJECT_URL: https://github.com/pftf/RPi4
